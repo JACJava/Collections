@@ -12,7 +12,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
                 <configuration>
                     <source>8</source>
                     <target>8</target>
@@ -26,18 +25,15 @@
                     <mainClass>com.pluralsight.collections.Main</mainClass>
                 </configuration>
             </plugin>
+
             <plugin>
                 <!-- Build an executable JAR -->
-                <!-- maven installed on mac os has jar version of 3.1.0 -->
-                <!-- how to upgrade maven???? -->
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>2.4</version>
                 <configuration>
                     <archive>
                         <manifest>
-                            <addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>
                             <mainClass>com.pluralsight.collections.Main</mainClass>
                         </manifest>
                     </archive>
@@ -72,7 +68,6 @@
     <properties>
         <maven.compiler.source>1.6</maven.compiler.source>
         <maven.compiler.target>1.6</maven.compiler.target>
-        <!--project.build.sourceEncoding>UTF-8</project.build.sourceEncoding-->
     </properties>
 
 
