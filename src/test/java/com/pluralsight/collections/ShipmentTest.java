@@ -2,10 +2,7 @@ package com.pluralsight.collections;
 
 import org.junit.Test;
 
-import static com.pluralsight.collections.ProductFixtures.door;
-import static com.pluralsight.collections.ProductFixtures.floorPanel;
-import static com.pluralsight.collections.ProductFixtures.window;
-
+import static com.pluralsight.collections.ProductFixtures.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.contains;
 
